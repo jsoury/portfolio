@@ -1,0 +1,35 @@
+$breakpoints: (
+    "small": 767px,
+    "medium": 992px,
+    "large": 1200px,
+);
+
+$colors: (
+    primary: hsl(0, 0%, 8%),
+    secondary: hsl(0, 0%, 60%),
+    tertiary: hsl(165, 56%, 74%),
+    dark: hsl(0, 0%, 40%),
+    mediumDark: hsl(0, 0%, 78%),
+    grey: hsl(0, 0%, 96%),
+    white: hsl(0, 0%, 100%),
+);
+
+// $background-location: tint(color(dark), 91.6);
+// $background-grey-light: tint(color(dark), 96.5);
+// $working-icon: tint(color(dark), 49.5);
+// $background-footer: tint(color(dark), 20.8);
+// $working-store: tint(color(primary), 85);
+// $background-button: linear-gradient(color(secondary), color(primary));
+// $background-button-hover: linear-gradient(
+//     hsla(317, 100%, 74%, 75%),
+//     hsla(267, 66%, 60%, 75%)
+//);
+
+$font-title: ("Bebas Neue", cursive);
+$font-text: ("Montserrat", sans-serif);
+
+$shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+$button-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+$button-shadow-hover: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;

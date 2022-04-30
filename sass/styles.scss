@@ -1,0 +1,44 @@
+@import "./libs/normalize.scss";
+@import "./libs/function.scss";
+@import "./libs/mixin.scss";
+@import "./variable.scss";
+@import "nav.scss";
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+
+body {
+    color: color(primary);
+    font-size: 1rem;
+    font-family: $font-text;
+}
+
+@for $i from 1 through 3 {
+    h#{$i} {
+        color: color(primary);
+        font-family: $font-title;
+        font-size: calc(3 - ($i * 0.5)) + rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: color(primary);
+}
+
+header,
+section {
+    margin-bottom: 40px;
+}
+
+main {
+    margin: 0 20px;
+}

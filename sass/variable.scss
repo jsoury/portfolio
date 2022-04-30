@@ -19,11 +19,11 @@ $colors: (
 // $working-icon: tint(color(dark), 49.5);
 // $background-footer: tint(color(dark), 20.8);
 // $working-store: tint(color(primary), 85);
-// $background-button: linear-gradient(color(secondary), color(primary));
-// $background-button-hover: linear-gradient(
-//     hsla(317, 100%, 74%, 75%),
-//     hsla(267, 66%, 60%, 75%)
-//);
+$background-button: linear-gradient(color(secondary),30%, color(primary));
+$background-button-hover: linear-gradient(
+    hsla(0, 0%, 8%, 80%),90%,
+    hsla(0, 0%, 60%, 80%)
+);
 
 $font-title: ("Bebas Neue", cursive);
 $font-text: ("Montserrat", sans-serif);

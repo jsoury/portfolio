@@ -337,19 +337,40 @@ template {
   display: none;
 }
 
+.btn {
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 0.2rem;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(0deg, 0%, 8%);
+  text-align: center;
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+}
+.btn__block {
+  width: 100%;
+}
+.btn:hover {
+  background: linear-gradient(hsla(0deg, 0%, 8%, 0.8), 90%, hsla(0deg, 0%, 60%, 0.8));
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transform: translate3d(0, -2px, 0);
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 5px solid hsl(0deg, 0%, 60%);
+  border-bottom: 5px solid hsl(0deg, 0%, 40%);
   padding: 0 20px;
   margin-top: 40px;
 }
-nav h1 {
-  margin: 10px;
+nav .nav-brand {
+  margin: 0;
 }
-nav h1:hover {
+nav .nav-brand:hover {
   transform: scale(1.1);
 }
 nav ul {
@@ -367,11 +388,11 @@ nav li {
 nav li::after {
   content: " ";
   position: absolute;
-  right: -10px;
-  bottom: -10px;
+  right: 0;
+  bottom: 0;
   height: 10px;
   width: 5px;
-  background-color: hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 40%);
 }
 nav li a {
   display: block;
@@ -386,6 +407,42 @@ nav .active {
   background-color: hsl(0deg, 0%, 8%);
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+.hero h2 {
+  font-size: 6rem;
+  margin: 1rem;
+}
+.hero__logo {
+  width: 30vw;
+}
+.hero__logo img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+}
+.hero__title {
+  border-bottom: 5px solid hsl(0deg, 0%, 60%);
+}
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -396,7 +453,7 @@ html {
 
 body {
   color: hsl(0deg, 0%, 8%);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
 }
 

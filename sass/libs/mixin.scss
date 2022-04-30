@@ -5,7 +5,7 @@
     // If the key exists in the map
     @if $value != null {
         // Prints a media query based on the value
-        @media only screen and (min-width: $value) {
+        @media only screen and (max-width: $value) {
             @content;
         }
     }
@@ -15,4 +15,9 @@
         @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
           + "Please make sure it is defined in `$breakpoints` map.";
     }
+}
+
+@mixin border-auto(){
+    padding: 0 20px;
+    margin-top: 40px;
 }

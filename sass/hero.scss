@@ -1,0 +1,32 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    @include border-auto;
+    h2{
+        font-size: 6rem;
+        margin: 1rem;
+    }
+    &__logo{
+        width: 30vw;
+        & img{
+            width: 100%;
+            aspect-ratio: 1 / 1;
+        }        
+    }
+    &__cta{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        border-bottom: 5px solid color(secondary);
+    }
+    &__subtitle{
+        font-size: 1.5rem;
+        margin: 1rem 0 3rem 0;
+    }
+    @include break-to(small){
+        grid-template-columns: 1fr;
+    }
+}

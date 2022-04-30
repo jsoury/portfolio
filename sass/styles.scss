@@ -1,8 +1,10 @@
-@import "./libs/normalize.scss";
-@import "./libs/function.scss";
-@import "./libs/mixin.scss";
-@import "./variable.scss";
+@import "libs/normalize.scss";
+@import "libs/function.scss";
+@import "libs/mixin.scss";
+@import "variable.scss";
+@import "button.scss";
 @import "nav.scss";
+@import "hero.scss";
 
 * {
     box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 
 body {
     color: color(primary);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: $font-text;
 }
 

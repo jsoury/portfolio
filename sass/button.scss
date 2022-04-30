@@ -1,0 +1,22 @@
+
+.btn{
+    display: block;
+    //max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: .2rem;
+    color: color(white);   
+    background: color(primary);    
+    text-align: center;
+    font-weight: 700;
+    box-shadow: $button-shadow;
+    cursor: pointer;    
+    &__block{
+        width: 100%;
+    }
+    &:hover{
+        background: $background-button-hover;
+        box-shadow: $button-shadow-hover;
+        transform: translate3d(0,-2px,0); 
+    }
+}

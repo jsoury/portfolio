@@ -2,9 +2,11 @@
 @import "libs/function.scss";
 @import "libs/mixin.scss";
 @import "variable.scss";
-@import "button.scss";
+@import "components/button.scss";
+@import "components/card.scss";
 @import "nav.scss";
 @import "hero.scss";
+@import "achievements.scss";
 
 * {
     box-sizing: border-box;
@@ -43,4 +45,21 @@ section {
 
 main {
     margin: 0 20px;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 50px auto;
+    @include break-to(large){
+        max-width: 1440px;
+        margin: 50px auto;
+    }
+    @include break-to(medium){
+        max-width: 960px;
+        margin: 50px auto;
+    }
+    @include break-to(small){
+        max-width: 720px;
+        margin: 50px auto;
+    }
 }

@@ -1,0 +1,89 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: color(mediumDark);
+    width: 20%;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: $shadow;
+    overflow: hidden;
+    &__link{
+        position: relative;
+        img{      
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            aspect-ratio: 16/9;
+        }
+        &:hover,:active{
+            & > .card__image{
+                transform: scale(1.05);
+            }
+            & > .card__overlay{
+                transform: scale(1.05);
+                opacity: 0.5;
+                &--details{
+                    top: 50%;
+                    left: 50%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__overlay{
+        background: color(secondary);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        opacity: 0;
+        transition: all 0.4s ease-in-out 0s;
+
+        &--details{
+            font-size: 25px;
+            color: color(primary);
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 20%;
+            left: 50%;
+            opacity: 0;
+            z-index: 4;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out 0s;
+        }
+    }
+    &__image{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transform-origin: 50% 50%;
+        transform: scale(1);
+        transition: all 0.4s ease-in-out 0s;
+        
+    }    
+    &__body{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        line-height: 1.6;        
+        p{
+            margin: 0
+        }        
+    }
+    @include break-to(medium){
+        width: 45%;
+    }
+    @include break-to(small){
+        width: 100%;
+    }     
+}

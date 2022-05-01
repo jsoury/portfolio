@@ -467,29 +467,39 @@ template {
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
 }
-
-.active, .accordion:hover {
+.accordion:hover {
   background: hsl(0deg, 0%, 40%);
 }
-
-.accordion:after {
+.accordion::after {
   content: "+";
   color: hsl(0deg, 0%, 100%);
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
+.accordion.active + .panel {
+  margin: 25px 0 40px 0;
+}
 
-.active:after {
+.active:hover {
+  background: hsl(0deg, 0%, 40%);
+}
+.active::after {
   content: "−";
 }
 
 .panel {
+  display: flex;
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+@media only screen and (max-width: 767px) {
+  .panel {
+    flex-direction: column;
+  }
 }
 
 nav {
@@ -589,6 +599,29 @@ nav .active {
   }
 }
 
+.service {
+  padding: 20px;
+}
+.service .round {
+  display: flex;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: hsl(0deg, 0%, 40%);
+}
+.service i {
+  padding: 5px;
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.service h3 {
+  margin: 0 0 0 10px;
+}
+.service__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -631,7 +664,8 @@ a {
   color: hsl(0deg, 0%, 8%);
 }
 
-header, main {
+header,
+main {
   margin: 0 20px;
 }
 

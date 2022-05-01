@@ -8,6 +8,7 @@
 @import "nav.scss";
 @import "hero.scss";
 @import "achievements.scss";
+@import "services.scss";
 
 * {
     box-sizing: border-box;
@@ -40,22 +41,23 @@ a {
     color: color(primary);
 }
 
-header, main {
+header,
+main {
     margin: 0 20px;
 }
 
-.container{
+.container {
     max-width: 1320px;
     margin: 50px auto;
-    @include break-to(large){
+    @include break-to(large) {
         max-width: 1440px;
         margin: 50px auto;
     }
-    @include break-to(medium){
+    @include break-to(medium) {
         max-width: 960px;
         margin: 50px auto;
     }
-    @include break-to(small){
+    @include break-to(small) {
         max-width: 720px;
         margin: 50px auto;
     }

@@ -362,12 +362,16 @@ template {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: hsl(0deg, 0%, 78%);
   width: 30%;
   padding: 5px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 100%);
   overflow: hidden;
+}
+.card:hover {
+  background-color: hsl(0deg, 0%, 40%);
 }
 .card__link {
   position: relative;
@@ -379,14 +383,17 @@ template {
   border-radius: 20px 20px 0 0;
   aspect-ratio: 16/9;
 }
-.card__link:hover > .card__image, .card__link :active > .card__image {
+.card__link:hover > .card__image,
+.card__link :active > .card__image {
   transform: scale(1.05);
 }
-.card__link:hover > .card__overlay, .card__link :active > .card__overlay {
+.card__link:hover > .card__overlay,
+.card__link :active > .card__overlay {
   transform: scale(1.05);
   opacity: 0.5;
 }
-.card__link:hover > .card__overlay--details, .card__link :active > .card__overlay--details {
+.card__link:hover > .card__overlay--details,
+.card__link :active > .card__overlay--details {
   top: 50%;
   left: 50%;
   opacity: 1;

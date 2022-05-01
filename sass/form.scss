@@ -1,0 +1,32 @@
+.form {
+    &__row {
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+    }
+    &__group {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    &__label {
+        transform: translateY(18px);
+        transition: all 0.3s;
+    }
+    &__input {
+        border-width: 0 0 4px 0;
+        border-color: color(secondary);
+        &:focus:not(:focus-visible) {
+            outline: none;
+            border-color: color(primary);
+            transform: translateY(0);
+        }
+        &:focus-visible {
+            outline: none;
+            border-color: color(primary);
+            &:not(:placeholder-shown) + label {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

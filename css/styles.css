@@ -348,6 +348,7 @@ template {
   text-align: center;
   font-weight: 700;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border: 2px outset hsl(0deg, 0%, 60%);
   cursor: pointer;
 }
 .btn__block {
@@ -627,6 +628,37 @@ nav .active {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.form__row {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+.form__group {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.form__label {
+  transform: translateY(18px);
+  transition: all 0.3s;
+}
+.form__input {
+  border-width: 0 0 4px 0;
+  border-color: hsl(0deg, 0%, 60%);
+}
+.form__input:focus:not(:focus-visible) {
+  outline: none;
+  border-color: hsl(0deg, 0%, 8%);
+  transform: translateY(0);
+}
+.form__input:focus-visible {
+  outline: none;
+  border-color: hsl(0deg, 0%, 8%);
+}
+.form__input:focus-visible:not(:placeholder-shown) + label {
+  transform: translateY(-5px);
 }
 
 * {

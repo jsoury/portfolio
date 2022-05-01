@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="#achievements">Réalisation</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -323,57 +323,70 @@
             </section>
             <!--END SERVICES-->
             <!--CONTACT-->
-            <section class="contact">
+            <section class="contact container">
                 <div class="form__container">
                     <form>
-                        <div class="form__group">
-                            <label class="form__label" for="first">Nom</label>
-                            <input
-                                class="form__input"
-                                name="first"
-                                id="first"
-                                type="text"
-                            />
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input
+                                    class="form__input"
+                                    name="first"
+                                    id="first"
+                                    type="text"
+                                    placeholder="name"
+                                />
+                                <label class="form__label" for="first"
+                                    >Nom</label
+                                >
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="last"
+                                    >Prénom</label
+                                >
+                                <input
+                                    class="form__input"
+                                    name="last"
+                                    id="last"
+                                    type="text"
+                                />
+                            </div>
                         </div>
-                        <div class="form__group">
-                            <label class="form__label" for="last">Prénom</label>
-                            <input
-                                class="form__input"
-                                name="last"
-                                id="last"
-                                type="text"
-                            />
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label" for="phone"
+                                    >Téléphone</label
+                                >
+                                <input
+                                    class="form__input"
+                                    name="phone"
+                                    id="phone"
+                                    type="tel"
+                                />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email"
+                                    >Email</label
+                                >
+                                <input
+                                    class="form__input"
+                                    name="email"
+                                    id="email"
+                                    type="email"
+                                />
+                            </div>
                         </div>
-                        <div class="form__group">
-                            <label class="form__label" for="phone"
-                                >Téléphone</label
-                            >
-                            <input
-                                class="form__input"
-                                name="phone"
-                                id="phone"
-                                type="tel"
-                            />
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label" for="email">Email</label>
-                            <input
-                                class="form__input"
-                                name="email"
-                                id="email"
-                                type="email"
-                            />
-                        </div>
-                        <div class="form__group">
-                            <label class="form__label" for="request"
-                                >Quel est votre demande ?
-                            </label>
-                            <input
-                                class="form__input"
-                                name="request"
-                                id="request"
-                                type="textarea"
-                            />
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label" for="request"
+                                    >Quel est votre demande ?
+                                </label>
+                                <input
+                                    class="form__input"
+                                    name="request"
+                                    id="request"
+                                    type="textarea"
+                                />
+                            </div>
                         </div>
                         <button type="submit" class="btn">Envoyer</button>
                     </form>

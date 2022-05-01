@@ -631,12 +631,7 @@ a {
   color: hsl(0deg, 0%, 8%);
 }
 
-header,
-section {
-  margin-bottom: 100px;
-}
-
-main {
+header, main {
   margin: 0 20px;
 }
 

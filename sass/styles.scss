@@ -10,6 +10,7 @@
 @import "achievements.scss";
 @import "services.scss";
 @import "form.scss";
+@import "footer.scss";
 
 * {
     box-sizing: border-box;
@@ -49,7 +50,8 @@ main {
 
 .container {
     max-width: 1320px;
-    margin: 50px auto;
+    margin-right: auto;
+    margin-left: auto;
     @include break-to(large) {
         max-width: 1440px;
         margin: 50px auto;
@@ -62,4 +64,13 @@ main {
         max-width: 720px;
         margin: 50px auto;
     }
+}
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section__title{
+    font-size: 3rem;
+    margin:50px 0;
 }

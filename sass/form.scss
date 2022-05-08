@@ -1,3 +1,29 @@
+$tranformLabel : -50px;
+
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: 0;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: #666;
+    opacity: 0;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #666;
+    opacity: 0;
+ }
+ 
+ :-ms-input-placeholder {
+    color: #666;
+    opacity: 0;
+ }
+ textarea{
+     resize: vertical;
+     overflow: hidden;
+ }
+
 .form {
     &__row {
         display: flex;
@@ -6,27 +32,76 @@
     }
     &__group {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100%;
+        &[data-error]::after{
+            content: attr(data-error);
+            font-size:1rem;
+            color: hsl(0, 80%, 30%);
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 7px;
+            text-align: right;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        &[data-visible="true"]::after {
+            opacity: 1;            
+        }
+        &[data-visible="true"] .form__input{
+            border-color: hsl(0, 80%, 30%);
+        }
     }
     &__label {
-        transform: translateY(18px);
+        transform: translateY(-30px);
         transition: all 0.3s;
+        &--textarea{
+            position: absolute;
+        }
     }
     &__input {
         border-width: 0 0 4px 0;
         border-color: color(secondary);
-        &:focus:not(:focus-visible) {
+        
+        &:focus {
             outline: none;
             border-color: color(primary);
-            transform: translateY(0);
+            & + label{
+                transform: translateY($tranformLabel);
+            }           
         }
         &:focus-visible {
             outline: none;
             border-color: color(primary);
-            &:not(:placeholder-shown) + label {
-                transform: translateY(-5px);
-            }
+            & + label{
+                transform: translateY($tranformLabel);
+            }            
+        }
+        &:not(:placeholder-shown) + label {
+            transform: translateY($tranformLabel);
         }
     }
+    .btn-submit{
+        margin: none;
+        float: right;
+    }
 }
+
+// .formData[data-error]::after {
+//     content: attr(data-error);
+//     font-size: 0.6em;
+//     color: #e54858;
+//     display: block;
+//     margin-top: 10px;
+//     margin-bottom: 7px;
+//     text-align: right;
+//     line-height: 0.3;
+//     opacity: 0;
+//     transition: 0.3s;
+//   }
+//   .formData[data-visible="true"]::after {
+//     opacity: 1;
+//   }
+//   .formData[data-visible="true"] .text-control {
+//     border: 2px solid #e54858;
+//   }

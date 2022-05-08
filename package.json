@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build":"sass ./sass/global.scss ./css/styles.css --style=compressed --no-source-map",
-    "watch":"sass -w ./sass/styles.scss ./css/styles.css",
+    "build": "sass ./sass/global.scss ./css/styles.css --style=compressed --no-source-map",
+    "watch": "sass -w ./sass/styles.scss ./css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/jsoury/portfolio/issues"
   },
-  "homepage": "https://github.com/jsoury/portfolio#readme"
+  "homepage": "https://github.com/jsoury/portfolio#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "loose-envify": "^1.4.0",
+    "requirejs": "^2.3.6",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/convict": "^6.1.1",
+    "@types/dotenv": "^8.2.0",
+    "convict": "^6.2.2",
+    "dotenv": "^16.0.0",
+    "val-loader": "^4.0.0"
+  }
 }

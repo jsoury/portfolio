@@ -1,399 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <link rel="stylesheet" href="./css/styles.css" />
-        <title>Jonathan Soury JS-solution</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h1 class="nav-brand"><a href="index.html">JS-solution</a></h1>
-                <ul>
-                    <li><a href="#achievements">Réalisation</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <div class="hero__logo">
-                    <img
-                        src="./images/JsSolutionLogoRond.png"
-                        alt="logo JS-solution"
-                    />
-                </div>
-                <div class="hero__cta">
-                    <div class="hero__title">
-                        <h2>agence numérique</h2>
-                    </div>
-                    <div class="hero__subtitle">
-                        Une solution sur mesure pour augmenter votre visibilité
-                    </div>
-                    <a class="btn btn__block">
-                        Un projet a réaliser, contactez nous
-                    </a>
-                </div>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jonathan Soury JS-solution</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="nav-brand"><a href="index.html">JS-solution</a></h1>
+        <ul>
+          <li><a href="#achievements">Réalisation</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero__logo">
+          <img src="./images/JsSolutionLogoRond.png" alt="logo JS-solution" />
+        </div>
+        <div class="hero__cta">
+          <div class="hero__title">
+            <h2>agence numérique</h2>
+          </div>
+          <div class="hero__subtitle">
+            Une solution sur mesure pour augmenter votre visibilité
+          </div>
+          <a class="btn btn__block" href="#contact">
+            Un projet a réaliser, contactez nous
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--ACHIEVEMENTS-->
+      <section class="achievements container" id="achievements">
+        <h2 class="section__title">Réalisations</h2>
+        <div class="achievements__container">
+          <div class="card">
+            <a class="card__link" href="https://www.sphayon.fr" target="_blank">
+              <div class="card__overlay"></div>
+              <img
+                class="card__image"
+                src="./images/realisation/SpHayon.PNG"
+                alt="sp hayon"
+              />
+              <div class="card__overlay--details">
+                <strong>Voir le site</strong>
+              </div>
+            </a>
+            <div class="card__body">
+              <p>
+                <strong>SP HAYON</strong>
+                <br />Le spécialiste du hayon élévateur
+              </p>
             </div>
-        </header>
+          </div>
 
-        <main>
-            <!--ACHIEVEMENTS-->
-            <section class="achievements container" id="achievements">
-                <h2>Réalisations</h2>
-                <div class="achievements__container">
-                    <div class="card">
-                        <a
-                            class="card__link"
-                            href="https://www.sphayon.fr"
-                            target="_blank"
-                        >
-                            <div class="card__overlay"></div>
-                            <img
-                                class="card__image"
-                                src="./images/realisation/SpHayon.PNG"
-                                alt="sp hayon"
-                            />
-                            <div class="card__overlay--details">
-                                <strong>Voir le site</strong>
-                            </div>
-                        </a>
-                        <div class="card__body">
-                            <p>
-                                <strong>SP HAYON</strong>
-                                <br />Le spécialiste du hayon élévateur
-                            </p>
-                        </div>
-                    </div>
+          <div class="card">
+            <a
+              class="card__link"
+              href="https://entreprise-martin-marchand.fr/"
+              target="_blank"
+            >
+              <div class="card__overlay"></div>
+              <img
+                class="card__image"
+                src="./images/realisation/EntrepriseMartinMarchand.PNG"
+                alt="entreprise martin marchand"
+              />
+              <div class="card__overlay--details">
+                <strong>Voir le site</strong>
+              </div>
+            </a>
+            <div class="card__body">
+              <p>
+                <strong>ENT. MARTIN & MARCHAND</strong>
+                <br />L'artisanat à votre service
+              </p>
+            </div>
+          </div>
 
-                    <div class="card">
-                        <a
-                            class="card__link"
-                            href="https://entreprise-martin-marchand.fr/"
-                            target="_blank"
-                        >
-                            <div class="card__overlay"></div>
-                            <img
-                                class="card__image"
-                                src="./images/realisation/EntrepriseMartinMarchand.PNG"
-                                alt="entreprise martin marchand"
-                            />
-                            <div class="card__overlay--details">
-                                <strong>Voir le site</strong>
-                            </div>
-                        </a>
-                        <div class="card__body">
-                            <p>
-                                <strong>ENT. MARTIN & MARCHAND</strong>
-                                <br />L'artisanat à votre service
-                            </p>
-                        </div>
-                    </div>
+          <div class="card">
+            <a
+              class="card__link"
+              href="http://ohmyfood.js-solution.fr/"
+              target="_blank"
+            >
+              <div class="card__overlay"></div>
+              <img
+                class="card__image"
+                src="./images/realisation/ohmyfood.PNG"
+                alt="ohmyfood"
+              />
+              <div class="card__overlay--details">
+                <strong>Voir le site</strong>
+              </div>
+            </a>
+            <div class="card__body">
+              <p>
+                <strong>ohmyfood</strong>
+                <br />Réservez le menu qui vous convient
+              </p>
+            </div>
+          </div>
 
-                    <div class="card">
-                        <a
-                            class="card__link"
-                            href="http://ohmyfood.js-solution.fr/"
-                            target="_blank"
-                        >
-                            <div class="card__overlay"></div>
-                            <img
-                                class="card__image"
-                                src="./images/realisation/ohmyfood.PNG"
-                                alt="ohmyfood"
-                            />
-                            <div class="card__overlay--details">
-                                <strong>Voir le site</strong>
-                            </div>
-                        </a>
-                        <div class="card__body">
-                            <p>
-                                <strong>ohmyfood</strong>
-                                <br />Réservez le menu qui vous convient
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <a
-                            class="card__link"
-                            href="http://booki.js-solution.fr/"
-                            target="_blank"
-                        >
-                            <div class="card__overlay"></div>
-                            <img
-                                class="card__image"
-                                src="./images/realisation/booki.PNG"
-                                alt="booki"
-                            />
-                            <div class="card__overlay--details">
-                                <strong>Voir le site</strong>
-                            </div>
-                        </a>
-                        <div class="card__body">
-                            <p>
-                                <strong>Booki</strong>
-                                <br />Trouvez votre hébergement
-                            </p>
-                        </div>
-                    </div>
+          <div class="card">
+            <a
+              class="card__link"
+              href="http://booki.js-solution.fr/"
+              target="_blank"
+            >
+              <div class="card__overlay"></div>
+              <img
+                class="card__image"
+                src="./images/realisation/booki.PNG"
+                alt="booki"
+              />
+              <div class="card__overlay--details">
+                <strong>Voir le site</strong>
+              </div>
+            </a>
+            <div class="card__body">
+              <p>
+                <strong>Booki</strong>
+                <br />Trouvez votre hébergement
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--END ACHIEVEMENTS-->
+      <!--SERVICES-->
+      <section class="services container" id="services">
+        <h2 class="section__title">Services</h2>
+        <div class="container">
+          <button class="accordion">Conseil</button>
+          <div class="panel">
+            <div class="service">
+              <div class="service__title">
+                <div class="round">
+                  <i class="fa-solid fa-chess"></i>
                 </div>
-            </section>
-            <!--END ACHIEVEMENTS-->
-            <!--SERVICES-->
-            <section class="services container" id="services">
-                <h2>Services</h2>
-                <div class="container">
-                    <button class="accordion">Conseil</button>
-                    <div class="panel">
-                        <div class="service">
-                            <div class="service__title">
-                                <div class="round">
-                                    <i class="fa-solid fa-chess"></i>
-                                </div>
-                                <h3>Stratégie web</h3>
-                            </div>
-                            <div class="service__body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service">
-                            <div class="service__title">
-                                <div class="round">
-                                    <i class="fa-solid fa-list-check"></i>
-                                </div>
-                                <h3>Gestion de projet</h3>
-                            </div>
-                            <div class="service__body">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container">
-                        <button class="accordion">Design</button>
-                        <div class="panel">
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-solid fa-pen-ruler"></i>
-                                    </div>
-                                    <h3>Graphisme et ergonomie</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-solid fa-file-lines"></i>
-                                    </div>
-                                    <h3>Optimisation des contenus</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container">
-                        <button class="accordion">Développement</button>
-                        <div class="panel">
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-solid fa-code"></i>
-                                    </div>
-                                    <h3>Développement sur mesure</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-solid fa-server"></i>
-                                    </div>
-                                    <h3>Hébergement</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container">
-                        <button class="accordion">Référencement</button>
-                        <div class="panel">
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-brands fa-searchengin"></i>
-                                    </div>
-                                    <h3>Référencement</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service">
-                                <div class="service__title">
-                                    <div class="round">
-                                        <i class="fa-solid fa-comments"></i>
-                                    </div>
-                                    <h3>Réseaux sociaux</h3>
-                                </div>
-                                <div class="service__body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h3>Stratégie web</h3>
+              </div>
+              <div class="service__body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="service__title">
+                <div class="round">
+                  <i class="fa-solid fa-list-check"></i>
                 </div>
-            </section>
-            <!--END SERVICES-->
-            <!--CONTACT-->
-            <section class="contact container">
-                <div class="form__container">
-                    <form>
-                        <div class="form__row">
-                            <div class="form__group">
-                                <input
-                                    class="form__input"
-                                    name="first"
-                                    id="first"
-                                    type="text"
-                                    placeholder="name"
-                                />
-                                <label class="form__label" for="first"
-                                    >Nom</label
-                                >
-                            </div>
-                            <div class="form__group">
-                                <label class="form__label" for="last"
-                                    >Prénom</label
-                                >
-                                <input
-                                    class="form__input"
-                                    name="last"
-                                    id="last"
-                                    type="text"
-                                />
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__group">
-                                <label class="form__label" for="phone"
-                                    >Téléphone</label
-                                >
-                                <input
-                                    class="form__input"
-                                    name="phone"
-                                    id="phone"
-                                    type="tel"
-                                />
-                            </div>
-                            <div class="form__group">
-                                <label class="form__label" for="email"
-                                    >Email</label
-                                >
-                                <input
-                                    class="form__input"
-                                    name="email"
-                                    id="email"
-                                    type="email"
-                                />
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__group">
-                                <label class="form__label" for="request"
-                                    >Quel est votre demande ?
-                                </label>
-                                <input
-                                    class="form__input"
-                                    name="request"
-                                    id="request"
-                                    type="textarea"
-                                />
-                            </div>
-                        </div>
-                        <button type="submit" class="btn">Envoyer</button>
-                    </form>
+                <h3>Gestion de projet</h3>
+              </div>
+              <div class="service__body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__container">
+            <button class="accordion">Design</button>
+            <div class="panel">
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                  </div>
+                  <h3>Graphisme et ergonomie</h3>
                 </div>
-            </section>
-            <!--END CONTACT-->
-        </main>
-    </body>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <h3>Optimisation des contenus</h3>
+                </div>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__container">
+            <button class="accordion">Développement</button>
+            <div class="panel">
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h3>Développement sur mesure</h3>
+                </div>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-solid fa-server"></i>
+                  </div>
+                  <h3>Hébergement</h3>
+                </div>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__container">
+            <button class="accordion">Référencement</button>
+            <div class="panel">
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-brands fa-searchengin"></i>
+                  </div>
+                  <h3>Référencement</h3>
+                </div>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <div class="service">
+                <div class="service__title">
+                  <div class="round">
+                    <i class="fa-solid fa-comments"></i>
+                  </div>
+                  <h3>Réseaux sociaux</h3>
+                </div>
+                <div class="service__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--END SERVICES-->
+      <!--CONTACT-->
+      <section class="contact container" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <div class="form__container">
+          <form name="formContact" onsubmit=" return validateSubmit();">
+            <div class="form__row">
+              <div
+                class="form__group"
+                data-error="Le nom doit contenir un minimum de 2 caractères"
+              >
+                <input
+                  class="form__input"
+                  name="last"
+                  id="last"
+                  type="text"
+                  placeholder="name"
+                />
+                <label class="form__label" for="last">Nom</label>
+              </div>
+              <div
+                class="form__group"
+                data-error="Le prénom doit contenir un minimum de 2 caractères"
+              >
+                <input
+                  class="form__input"
+                  name="first"
+                  id="first"
+                  type="text"
+                  placeholder="last name"
+                />
+                <label class="form__label" for="first"> Prénom </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div
+                class="form__group"
+                data-error="Numéro de téléphone invalide"
+              >
+                <input
+                  class="form__input"
+                  name="phone"
+                  id="phone"
+                  type="tel"
+                  placeholder="phone"
+                />
+                <label class="form__label" for="phone">Téléphone</label>
+              </div>
+              <div class="form__group" data-error="Adresse email invalide">
+                <input
+                  class="form__input"
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="email"
+                />
+                <label class="form__label" for="email">Email</label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div
+                class="form__group"
+                data-error="Votre demande doit contenir un minimum de 5 caractères"
+              >
+                <textarea
+                  class="form__input"
+                  name="request"
+                  id="request"
+                  placeholder="request"
+                  spellcheck="true"
+                  rows="2"
+                ></textarea>
+                <label class="form__label--textarea" for="request"
+                  >Quel est votre projet ?
+                </label>
+              </div>
+            </div>
+            <input type="submit" class="btn btn-submit" value="Envoyer" />
+          </form>
+          <div class="toast"></div>
+        </div>
+      </section>
+      <!--END CONTACT-->
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <img class="fantom__left" src="./images/Fantome.png" />
+        <div class="fantom__right">
+          <img src="./images/pacManb.png" />
+          <img src="./images/Fantome.png" />
+          <img id="fantom__small" src="./images/Fantome.png" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__row container">
+          <div class="footer__col">
+            JS-solution Votre solution web <br />
+            1 place Jacqueline Auriol <br />
+            86180 Buxerolles<br />
+            0648362966 <br />
+            mail:<a href="mailto:contact@js-solution.fr"
+              >contact@js-solution.fr</a
+            >
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li><a href="#achievements">Réalisation</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Mention légal</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            Agence web Poitiers (86)<br />création, développement et
+            référencement de site Internet, site mobile, responsive, Html, CSS,
+            JavaScript, React, NextJS, application web sur mesure.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-<script src="./script/accordion.js"></script>
+<script src="./scripts/accordion.js"></script>
+<script src="./scripts/form.js"></script>
+<script src="./server.js"></script>
